@@ -1,0 +1,45 @@
+.main{
+    background-color: #f2ece4;
+    font-size: 1.10rem;
+    font-family: system-ui;
+    line-height: 1.2;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+nav{
+    margin: 0% ;
+    background-color: #e6e0d8;
+    border-bottom: 1px solid hsla(332, 51%, 61%, 0.8);
+}
+
+nav span{
+    color:black;
+}
+
+.navbar-item{
+    font-size: 20px;
+    padding: 0px 5px 5px 0px;
+}
+
+.navbar-logo{
+    height: 70px;
+    padding: 0%;
+}
+
+.navbar .nav-link {
+   letter-spacing: 0.5px;
+}
+
+.navbar-light .navbar-nav .navbar-item .nav-link.active {
+    color: #984a6e ;
+ }
+
+
+
+
