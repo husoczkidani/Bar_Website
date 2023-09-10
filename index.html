@@ -3,129 +3,187 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Banderas Ételbár</title>
+    <title>Banderas Világa Ételbár</title>
 
+    <!--Styles-->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/menuStyle.css">
 
     <!--Links for bootstrap 5-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="main">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="padding: 0%;">
-        <div class="container ">
-            <img class="navbar-brand navbar-logo" src="./Resources/logos/navbarlogo.png" />
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="navbar-item">
-                        <a class="nav-link" href="#menu1"><b>Menu1</b></a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="#menu2"><b>Menu2</b></a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="#menu3"><b>Menu3 </b></a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="#list"><b>Menu4</b></a>
-                    </li>
-                </ul>
-            </div>
-          
-        </div>
-      </nav>
+<body>
+    <div class="main-container d-flex">
+        
+        <div class="sidebar sticky" id="side_nav">
 
+            <!--Header-->
+            <div class="header-box px-2 pt-2 pb-4">
+                <h1 class="fs-4">
+                    <img class="sidebarlogo" src="Resources/logos/sidebarlogo.png"/>
+                </h1>
+            </div>
+            <hr class="hr-color mx-3">
 
-    <div class="menutable">
-        <div class="section" id="menu1">
-            <h3>Menu1</h3>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
+            <!--List-->
+            <ul class="list-unstyled px-2">
+                <li class="active"><a href="#menu1" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-bowl-food"></i> Saláták</a></li>
+                <li class=""><a href="#menu2" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-stroopwafel"></i> Tészták</a></li>
+                <li class=""><a href="#menu3" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-burger"></i> Óriás Szendvicsek</a></li>
+                <li class=""><a href="#menu4" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-bacon"></i> Frissensültek</a></li>
+                <li class=""><a href="#menu5" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-cake-candles"></i> Desszert</a></li>
+                <hr class="hr-color mx-3">
+                <li class=""><a href="#allergane" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-utensils"></i> Előforduló allergének</a></li>
+                <li class=""><a href="#elerhetoseg" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-location-dot"></i> Elérhetőség</a></li>
+            </ul>
+
+        </div>
+
+        <!--Content-->
+        <div class="content">
+            <nav id="responsiveNav" class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between d-md-none d-block">
+                        <span class="navbar-brand">Banderas Világa Ételbár</span>
+                        <button class="btn px-1 py-0"><i class="fa fa-bars"></i></button>
+                    </div>
+                </div>
+              </nav>
+
+        <div class="menutable">
+            <div class="section" id="menu1">
+                <h3>Menu1</h3>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                    <span>1950,</span>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                    <span>1950,</span>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                    <span>1950,</span>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                    <span>1950,</span>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                    <span>1950,</span>
+                </div>
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                    <span>1950,</span>
+                </div>
+                </div>
+                <div class="section" id="menu2">
+                    <h3>Menu1</h3>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                </div>
+                <div class="section" id="menu3">
+                    <h3>Menu1</h3>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                </div>
+                <div class="section" id="menu4">
+                    <h3>Menu1</h3>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
+                        <span>1950,</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section" id="menu2">
-            <h3>Menu2</h3>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-        </div>
-        <div class="section" id="menu3">
-            <h3>Menu3</h3>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-            <div class="item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolore, ut repellendus, impedit doloremque maiores mollitia adipisci suscipit natus a ipsa? Voluptatum, aliquam excepturi saepe tempora molestias optio odit numquam?</p>
-                <span>1950,</span>
-            </div>
-        </div>
+
     </div>
+
+    <!--Scripts-->
+    <script src="https://kit.fontawesome.com/00541177ef.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(".sidebar ul li").on('click', function(){
+            $(".sidebar ul li.active").removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $("#responsiveNav").on('click', function(){
+            $(".sidebar").addClass('active');
+        });
+
+        $(".sidebar").on('click', function(){
+            $(".sidebar").removeClass('active');
+        });
+    </script>
 
 </body>
 </html>

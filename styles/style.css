@@ -1,45 +1,54 @@
-.main{
-    background-color: #f2ece4;
-    font-size: 1.10rem;
-    font-family: system-ui;
-    line-height: 1.2;
-    margin: 0;
-    position: relative;
+body{
+    background: black;
+    color: black;
 }
 
-a {
-    transition: all 0.4s ease;
-    text-decoration: none;
+#side_nav{
+    background: #f2ece4;
+    min-width: 280px;
+    max-width: 280px;
+    transition: all 0.2s;
 }
 
-nav{
-    margin: 0% ;
-    background-color: #e6e0d8;
-    border-bottom: 1px solid hsla(332, 51%, 61%, 0.8);
+.sidebarlogo{
+    height: 280px;
 }
 
-nav span{
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.hr-color{
+    background:black;
+}
+
+.sidebar li.active{
+    background: hsla(332, 51%, 61%, 0.8);
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover{
+    color: black;
+}
+
+.sidebar li a{
     color:black;
 }
 
-.navbar-item{
-    font-size: 20px;
-    padding: 0px 5px 5px 0px;
+@media(max-width: 767px){
+    #side_nav{
+        margin-left: -280px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+    .navbar{
+        background: #f2ece4;
+        color: black;
+        border-bottom: 1px solid hsla(332, 51%, 61%, 0.8);
+    }
 }
-
-.navbar-logo{
-    height: 70px;
-    padding: 0%;
-}
-
-.navbar .nav-link {
-   letter-spacing: 0.5px;
-}
-
-.navbar-light .navbar-nav .navbar-item .nav-link.active {
-    color: #984a6e ;
- }
-
-
-
-
