@@ -1,3 +1,13 @@
+.column {
+    flex: 33.33%;
+    padding: 2px;
+    margin: 10px;
+}
+.container {
+    display: flex;
+}	
+
+
 .menutable{
     padding-top: 1em;
     width: min(1000px, 100% - 3rem);
@@ -10,16 +20,14 @@
 }
 
 .item{
+    font-size: 22px;
     padding-top:  2em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid hsla(332, 51%, 61%, 0.6);
 }
 
-.item p{
-    margin-top: 0;
-}
-
 .item span{
+    font-size: 19px;
     font-weight: bold;
     position: relative;
     margin-right: 15px;
@@ -35,3 +43,16 @@
     right: -15px;
 }
 
+.item p{
+    margin-top: 0;
+}
+
+.item ul{
+    list-style-type: none;
+}
+
+@media(max-width: 767px){
+    .container {
+        display:inline;
+    }
+}
