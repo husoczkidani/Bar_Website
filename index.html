@@ -11,6 +11,7 @@
 
     <!--Links for bootstrap 5-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    
 
 
 </head>
@@ -50,10 +51,40 @@
                         <button class="btn px-1 py-0"><i class="fa fa-bars"></i></button>
                     </div>
                 </div>
-              </nav>
+            </nav>
 
+            <!--Carousel-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Resources/carousel/picture1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Resources/carousel/picture2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Resources/carousel/picture3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="menuheader">
+                <hr id="one" data-symbol="☂☂☂">
+                <h1 class="menuheader"> Menü:</h1>
+                <hr id="one" data-symbol="☂☂☂">
+            </div>
+
+            <!--Menü-->
             <div class="menutable">
                 <h3>Tészták</h3>
+                <!--Pasta start-->
                 <div class="section container" id="pasta">
                     <div class="column  item">
                         <h4>Választható tészták:</h4>
@@ -100,6 +131,7 @@
                         </ul>
                     </div>
                 </div>
+                <!--Pasta end | Sandwitch start-->
                 <div class="section" id="sandwich">
                     <h3>Óriás Szendvicsek</h3>
                     <div class="item">
@@ -159,6 +191,74 @@
                         </div>
                     </div>
                 </div>
+                <!--Sandwitch end | Salad start-->
+
+                <div class="section" id="salad">
+                    <h3>Saláták</h3>
+                    <div class="item">
+                        <p>GÖRÖG SALÁTA
+                            <sup>10</sup>
+                            <span>1690,</span>
+                        </p>
+                        <p>OLIVÁS FRISS KEVERT SALÁTA
+                            <sup>10</sup>
+                            <span>1190,</span>
+                        </p>
+                        <p>AMERIKAI KÁPOSZTA SALÁTA
+                            <sub>(coleslaw)</sub>
+                            <sup>3,7,10</sup>
+                            <span>990,</span>
+                        </p>
+                        <p>GAZDAG TÉSZTASALÁTA
+                            <sup>1,3,10</sup>
+                            <span>1790,</span>
+                        </p>
+                    </div>
+                </div>
+                <!--Salad end | Roasted start-->
+                <div class="section" id="roasted">
+                    <h3>Frissensültek</h3>
+                    <div class="item">
+                        <p>GYROSTÁL
+                            <sub>(hús,saláta, burgonya, öntet)</sub>
+                            <sup>1,7</sup>
+                            <span>2350,</span>
+                        </p>
+                        <p>GYROS PALACSINTÁBAN
+                            <sup>1,3,7</sup>
+                            <span>2490,</span>
+                        </p>
+                        <p>CORNFLAKES CSIRKEMELL, HASÁBBURGONYA
+                            <sup>1,3,7,10</sup>
+                            <span>2190,</span>
+                        </p>
+                        <p>FÜSTÖS CSIRKE, HASÁBBURGONYA, MAJONÉZES KUKORICA
+                            <sup>1,3,7,10</sup><BR>
+                            <sub>(roston csirkemell fokhagymás parajjal, füstölt sajttal töltve)</sub>
+                            <span>2790,</span>
+                        </p>
+                        <p>ROSTON HARCSAFILÉ, OLIVÁS FRISS SALÁTA
+                            <sup>1,10</sup>
+                            <span>2990,</span>
+                        </p>
+                        <p>HARCSA CORDONBLEU, HASÁBBURGONYA
+                            <sup>1,3,7,</sup>
+                            <span>3190,</span>
+                        </p>
+                    </div>
+                </div>
+                <!--Roasted end | Dessert start-->
+
+                <div class="section" id="dessert">
+                    <h3>Desszert</h3>
+                    <div class="item">
+                        <p>MAKARANCS
+                            <sub>(titkos receptúra szerint)</sub>
+                            <sup>1,3,7</sup>
+                            <span>1490,</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>      
     </div>
@@ -166,7 +266,7 @@
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/00541177ef.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(".sidebar ul li").on('click', function(){
             $(".sidebar ul li.active").removeClass('active');

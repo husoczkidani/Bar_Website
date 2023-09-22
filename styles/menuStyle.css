@@ -3,16 +3,42 @@
     padding: 2px;
     margin: 10px;
 }
+
 .container {
     display: flex;
 }	
 
+.menuheader hr{
+    overflow: visible; 
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+.menuheader hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+.menuheader h1,h3{
+    text-align: center;
+    font-family: serif;
+}
 
 .menutable{
     padding-top: 1em;
-    width: min(1000px, 100% - 3rem);
+    width: min(1100px, 100% - 3rem);
     margin-inline: auto;
     display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .section{
@@ -20,7 +46,7 @@
 }
 
 .item{
-    font-size: 22px;
+    font-size: 24px;
     padding-top:  2em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid hsla(332, 51%, 61%, 0.6);

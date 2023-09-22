@@ -36,6 +36,10 @@ hr.hr-color{
     color:black;
 }
 
+.carousel-item{
+    height: 600px;
+}
+
 @media(max-width: 767px){
     #side_nav{
         margin-left: -280px;
@@ -50,5 +54,8 @@ hr.hr-color{
         background: #f2ece4;
         color: black;
         border-bottom: 1px solid hsla(332, 51%, 61%, 0.8);
+    }
+    .carousel-item{
+        height: auto;
     }
 }
