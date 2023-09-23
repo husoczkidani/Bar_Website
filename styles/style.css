@@ -36,9 +36,6 @@ hr.hr-color{
     color:black;
 }
 
-.carousel-item{
-    height: 600px;
-}
 
 @media(max-width: 767px){
     #side_nav{
